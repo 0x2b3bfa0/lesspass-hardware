@@ -21,3 +21,7 @@ Use some sort of HTTP server pointing its root to the [LessPass](/LessPass) fold
     cd LessPass; python3 -m http.server
     
 Navigate to http://localhost:8000/index.html and connect the development board into a USB port.
+
+# Design
+
+This code is modifying the LessPass interface dynamically in a really obnoxious way. This proof of concept should be read with indulgence.
