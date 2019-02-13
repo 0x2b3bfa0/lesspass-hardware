@@ -3,7 +3,7 @@
 There are some serious cryptographic concerns to be addressed:
 
 * Replay attacks: a captured code can be replayed multiple times while remaining valid.
-  This can probably be avoided by using a secure bidiretional communication scheme involving a strong key exchange algorithm and a good random number generator.
+  This can probably be avoided by using a secure bidirectional communication scheme involving a strong key exchange algorithm and a good random number generator.
   
 * Leak of the master password: anybody with physical access to the key can dump the master password by patching some functions on the code.
   Is possible to mitigate this issue by storing a hash of the master password in the hardware token instead of the plaintext. This would break backwards-compatibility with the current algorithm, because the master password should be hashed alone first when entered manually.
