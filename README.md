@@ -11,3 +11,13 @@ There are some serious cryptographic concerns to be addressed:
 * Even if it's possible to overcome the aforementioned potential issues, anybody with physical access to the key or momentary access to the authenticated LessPass client can dump the master password (or its hash), effectively being able to impersonate the legit user.
   The first case (physical access to the key) could be avoided by adding another security measures such as a fingerprint reader on the security token or a multifactor authentication scheme combining the plaintext master password **and** the secret stored into the hardware token, both hashed together (this last factor can be replaced with a long mnemonic pharse in case of emergency).
   The second case enters into the security rabbit hole and can't be solved easily, even if we could run the lesspass algorithm inside the hardware token (although that would be great).
+
+# Usage
+
+Flash the file [Firmware.ino](/LessPass/Firmware/Firmware.ino) into a Atmega-32u4 development board.
+
+Use some sort of HTTP server pointing its root to the [LessPass](/LessPass) folder:
+
+    cd LessPass; python3 -m http.server
+    
+Navigate to http://localhost:8000/index.html and connect the development board into a USB port.
