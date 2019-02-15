@@ -16,11 +16,12 @@ There are some serious cryptographic concerns to be addressed:
 
 Flash the file [Firmware.ino](/LessPass/Firmware/Firmware.ino) into a Atmega-32u4 development board.
 
+## Serving the application locally:
 Use some sort of HTTP server pointing its root to the [LessPass](/LessPass) folder:
 
     cd LessPass; python3 -m http.server
-    
-Navigate to http://localhost:8000/index.html and connect the development board into a USB port.
+
+Navigate to https://0x2b3bfa0.github.io/lesspass-hardware (or http://localhost:8000/index.html if you're running the local server) and connect the development board into a USB port.
 
 # Design
 
