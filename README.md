@@ -21,7 +21,8 @@ Use some sort of HTTP server pointing its root to the [LessPass](/LessPass) fold
 
     cd LessPass; python3 -m http.server
 
-Navigate to https://0x2b3bfa0.github.io/lesspass-hardware (or http://localhost:8000/index.html if you're running the local server) and connect the development board into a USB port.
+## Opening the application:
+Navigate to https://0x2b3bfa0.github.io/lesspass-hardware (or http://localhost:8000/index.html if you're running a local server) and connect the development board into a USB port.
 
 # Design
 
