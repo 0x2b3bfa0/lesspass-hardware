@@ -14,7 +14,7 @@ There are some serious cryptographic concerns to be addressed:
 
 # Usage
 
-Flash the file [Firmware.ino](/LessPass/Firmware/Firmware.ino) into a Atmega-32u4 development board.
+Flash the file [Firmware.ino](/LessPass/Firmware/Firmware.ino) into an Atmega-32u4 development board.
 
 ## Serving the application locally:
 Use some sort of HTTP server pointing its root to the [LessPass](/LessPass) folder:
@@ -23,6 +23,16 @@ Use some sort of HTTP server pointing its root to the [LessPass](/LessPass) fold
 
 ## Opening the application:
 Navigate to https://0x2b3bfa0.github.io/lesspass-hardware (or http://localhost:8000/index.html if you're running a local server) and connect the development board into a USB port.
+
+# Testing
+
+## With hardware:
+You can plug an Atmega-32u4 development board while using this LessPass modification, and the master password will be typed automatically.
+
+## Witout hardware:
+Is possible to test the functionality with the master password `DEMO` by typing quickly this sequence:
+
+    24 912300815101335775767465 115
 
 # Design
 
