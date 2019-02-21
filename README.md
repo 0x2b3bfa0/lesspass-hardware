@@ -12,7 +12,7 @@ There are some serious cryptographic concerns to be addressed:
   The first case (physical access to the key) could be avoided by adding another security measures such as a fingerprint reader on the security token or a multifactor authentication scheme combining the plaintext master password **and** the secret stored into the hardware token, both hashed together (this last factor can be replaced with a long mnemonic pharse in case of emergency).
   The second case enters into the security rabbit hole and can't be solved easily, even if we could run the lesspass algorithm inside the hardware token (although that would be great).
 
-# Usage
+# Running
 
 Flash the file [Firmware.ino](/LessPass/Firmware/Firmware.ino) into an Atmega-32u4 development board.
 
@@ -22,7 +22,7 @@ Use some sort of HTTP server pointing its root to the [LessPass](/LessPass) fold
     cd LessPass; python3 -m http.server
 
 ## Opening the application:
-Navigate to https://0x2b3bfa0.github.io/lesspass-hardware (or http://localhost:8000/index.html if you're running a local server) and connect the development board into a USB port.
+Navigate to https://0x2b3bfa0.github.io/lesspass-hardware or http://localhost:8000/index.html if you're running a local server.
 
 # Testing
 
